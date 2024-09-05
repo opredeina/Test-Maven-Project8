@@ -25,18 +25,18 @@ public class RegistrationWithFakerTests {
     //открыть страницу
     open("https://demoqa.com/automation-practice-form/");
     //ввести имя
-    $("[id='firstName']").setValue("firstName");
+    $("[id='firstName']").setValue(firstName);
     //ввести фамилию
-    $("[id='lastName']").setValue("lastName");
+    $("[id='lastName']").setValue(lastName);
     //ввести почту
-    $("[id='userEmail']").setValue("userEmail");
+    $("[id='userEmail']").setValue(userEmail);
     //заполнить чек-бокс
     $("#genterWrapper").$(new ByText("Female")).click();
     //$(byAttribute("for", "gender-radio-2")).click();
     //ввести номер телефона
-    $("[id='userNumber']").setValue("userNumber");
+    $("[id='userNumber']").setValue(userNumber);
     //ввести адрес
-    $("[id='currentAddress']").setValue("currentAddress");
+    $("[id='currentAddress']").setValue(currentAddress);
     //кликнуть по кнопке
     $("[type='submit']").click();
     //проверка: во всплывающем окне есть текст Thanks for submitting the form
